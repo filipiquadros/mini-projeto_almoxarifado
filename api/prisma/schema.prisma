@@ -1,0 +1,14 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Ferramenta {
+  id         Int    @id @default(autoincrement())
+  nome       String
+  quantidade Int
+  status     String @default("disponivel")
+}
