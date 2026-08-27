@@ -1,3 +1,194 @@
+# =========================
+# DEPENDÊNCIAS
+# =========================
+
 node_modules/
+**/node_modules/
+
+
+# =========================
+# BUILDS / COMPILAÇÃO
+# =========================
+
 dist/
+**/dist/
+
+dist-ssr/
+**/dist-ssr/
+
+build/
+**/build/
+
+out/
+**/out/
+
+coverage/
+**/coverage/
+
+*.tsbuildinfo
+
+
+# =========================
+# VARIÁVEIS DE AMBIENTE
+# =========================
+
 .env
+.env.*
+**/.env
+**/.env.*
+
+# Permite versionar arquivos de exemplo
+!.env.example
+!**/.env.example
+
+
+# =========================
+# PRISMA
+# =========================
+
+# Banco local SQLite, caso apareça
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Arquivos locais/temporários do Prisma
+.prisma/
+**/.prisma/
+
+# NÃO ignorar:
+# prisma/schema.prisma
+# prisma/migrations/
+# prisma.config.ts / prisma7.config.ts
+
+
+# =========================
+# FERRAMENTAS / AGENTES
+# =========================
+
+.agents/
+**/.agents/
+
+.claude/
+**/.claude/
+
+.windsurf/
+**/.windsurf/
+
+skills-lock.json
+**/skills-lock.json
+
+
+# =========================
+# LOGS
+# =========================
+
+logs/
+**/logs/
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# =========================
+# CACHE
+# =========================
+
+.cache/
+**/.cache/
+
+.temp/
+**/.temp/
+
+tmp/
+**/tmp/
+
+.vite/
+**/.vite/
+
+.eslintcache
+
+
+# =========================
+# VS CODE / IDEs
+# =========================
+
+.vscode/*
+**/.vscode/*
+
+# Se quiser manter recomendações de extensões
+!.vscode/extensions.json
+!**/.vscode/extensions.json
+
+.idea/
+**/.idea/
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+
+# =========================
+# SISTEMA OPERACIONAL
+# =========================
+
+.DS_Store
+**/.DS_Store
+
+Thumbs.db
+Desktop.ini
+
+
+# =========================
+# ARQUIVOS TEMPORÁRIOS
+# =========================
+
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+
+~$*
+
+
+# =========================
+# TESTES
+# =========================
+
+.nyc_output/
+**/.nyc_output/
+
+coverage/
+**/coverage/
+
+
+# =========================
+# PACOTES / ARQUIVOS GERADOS
+# =========================
+
+*.tgz
+
+npm-cache/
+**/npm-cache/
+
+.pnpm-store/
+**/.pnpm-store/
+
+
+# =========================
+# SEGREDOS / CERTIFICADOS
+# =========================
+
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
